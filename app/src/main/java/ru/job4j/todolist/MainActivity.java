@@ -28,19 +28,6 @@ public class MainActivity extends AppCompatActivity {
         recycler.setHasFixedSize(true);
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setAdapter(adapter);
-
-//        Intent intent = getIntent();
-//        if (intent != null) {
-//            try {
-//                Item item = new Item(intent.getExtras().getString("name"), intent.getExtras().getString("desc"), System.currentTimeMillis());
-//                this.items.add(item);
-//                System.out.println("New Item");
-//
-//            } catch (NullPointerException npe) {
-//                System.out.println("Ошибка");
-//            }
-//            adapter.notifyItemInserted(this.items.size() - 1);
-//        }
     }
 
     public void addItemBtn(View view) {
